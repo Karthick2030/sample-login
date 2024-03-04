@@ -1,0 +1,127 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+.alert {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* .right-section {
+  background-image: url('D:\html\back.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+} */
+
+.col-md-6:nth-child(2) {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../assets/heroimage.png");
+}
+
+.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card-body {
+  background: linear-gradient(180deg, #03062F 0%, #180B74 100%);
+
+}
+
+.content1 {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  width: 420px;
+  height: 106px;
+  top: 184px;
+  left: 180px;
+
+}
+
+.content2 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 380px;
+  height: 84px;
+  top: 314px;
+  left: 180px;
+
+}
+
+.heading {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 48px;
+
+}
+
+.sub-head {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 28px;
+  color: #03062FB2;
+}

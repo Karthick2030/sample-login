@@ -1,0 +1,62 @@
+<div class="container-fluid" align="center">
+  <div class="card" style="width: 50rem;">
+    <img class="card-img-top">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6" style="margin-top: 158px;">
+          <div class="content1">
+            <p style="color: white;">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+          <div class="content2">
+            <p style="color: white">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.</p>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width: 40%;">Sign Up Now</button>
+        </div>
+        <div class="col-md-6 text-center">
+
+        </div>
+      </div>
+    </div>
+    <form [formGroup]="feedbackForm" (ngSubmit)="submitFeedback()" class="container">
+      <div class="heading">
+        <p>Contact us</p>
+      </div>
+      <div class="sub-head">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" formControlName="name" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" formControlName="email" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" formControlName="phone" class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="language">Choose a Language:</label>
+        <select formControlName="language" class="form-control">
+          <option value="">Select Language</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea formControlName="message" class="form-control"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" [disabled]="feedbackForm.invalid">Submit</button>
+    </form>
+  </div>
+
+</div>
